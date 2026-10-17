@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "hotbar-restack",
+	"version": "${version}",
+	"name": "Hotbar Restack",
+	"description": "Restacks items in your hotbar.",
+	"authors": [
+		"urlauba"
+	],
+	"contact": {
+		"sources": "https://github.com/urlauba/mc-hotbar-restack"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.urlauba.hotbarrestack.HotbarRestack"
+		],
+		"client": [
+			"io.github.urlauba.hotbarrestack.client.HotbarRestackClient"
+		]
+	},
+	"mixins": [
+		"hotbar-restack.mixins.json",
+		{
+			"config": "hotbar-restack.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
