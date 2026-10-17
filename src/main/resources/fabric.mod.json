@@ -3,7 +3,7 @@
 	"id": "hotbar-restack",
 	"version": "${version}",
 	"name": "Hotbar Restack",
-	"description": "Restacks items in your hotbar.",
+	"description": "Automatically refills your active hotbar slot as you use up a stack, pulling matching items from other hotbar slots or your inventory.",
 	"authors": [
 		"urlauba"
 	],
